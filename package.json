@@ -1,0 +1,20 @@
+{
+  "name": "lambda-express-actions",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.1",
+    "serverless-http": "^2.7.0",
+    "serverless-offline": "^10.2.1"
+  },
+  "devDependencies": {
+    "serverless-plugin-common-excludes": "^4.0.0",
+    "serverless-plugin-include-dependencies": "^5.0.0",
+    "serverless-plugin-write-env-vars": "^1.0.2"
+  }
+}

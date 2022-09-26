@@ -1,0 +1,20 @@
+service: lambda-express-actions
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+  memorySize: 2048
+  timeout: 30
+
+plugins: 
+  - serverless-offline # for offline support 
+  - serverless-plugin-common-excludes # this adds unused file to package : exclude
+  # - serverless-plugin-include-dependencies # removes unnecessary dependencies and only adds the dependencies which are there in the project
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - httpApi: '*'
