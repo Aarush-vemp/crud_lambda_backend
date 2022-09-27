@@ -1,9 +1,10 @@
 const serverless = require("serverless-http");
 const express = require("express");
 const initUserTable = require("./Models/UserModel");
+const cors = require("cors");
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 app.get("/", (req, res) => {
     res.send("ping connected");
 })

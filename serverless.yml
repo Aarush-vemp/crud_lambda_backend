@@ -1,10 +1,10 @@
-service: lambda-express-actions
+service: lambda-express-actions-two
 frameworkVersion: '3'
 
 provider:
   name: aws
   runtime: nodejs14.x
-  stage: dev
+  stage: prod
   region: us-east-1
   memorySize: 2048
   timeout: 30
